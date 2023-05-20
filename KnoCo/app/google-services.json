@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "812407653508",
+    "project_id": "knoco-c330d",
+    "storage_bucket": "knoco-c330d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812407653508:android:64764ca5c07afb164ceed1",
+        "android_client_info": {
+          "package_name": "com.example.knoco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "812407653508-o4ffe5djv0roi3feesf6s9nd6p91qer6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD43HN02vtLXV9kkddw79KOO8qVNEs4m6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "812407653508-o4ffe5djv0roi3feesf6s9nd6p91qer6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

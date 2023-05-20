@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PhoneVerificationActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:id="@+id/phoneAnimation"
+        app:lottie_rawRes="@raw/phone"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneAnimation"
+        android:text="OTP Verification"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/phoneTxt"
+        />
+    <TextView
+        android:id="@+id/phoneDes"
+        android:layout_width="wrap_content"
+        android:textSize="10sp"
+        android:layout_height="wrap_content"
+        android:text="We will sent you OTP code to verify your account ."
+        android:layout_below="@+id/phoneTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/enterPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your phone number"
+        android:layout_below="@+id/phoneDes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:id="@+id/pho"
+        android:layout_marginEnd="60dp"
+        android:gravity="center"
+        android:layout_below="@+id/enterPhone"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="+84"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/phoneNum"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:hint="xxxxxxxxxx"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textStyle="bold"
+            android:backgroundTint="@color/black"
+
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/phonebtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Next"
+        android:layout_marginHorizontal="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pho"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_circle"
+        android:textColor="#625F5F"
+        android:textSize="20dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:indeterminateTint="@color/black"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>

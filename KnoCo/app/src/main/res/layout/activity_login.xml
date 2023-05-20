@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/book_theme"
+    tools:context=".activity.LoginActivity">
+
+
+    <TextView
+        android:id="@+id/Logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abhaya_libre_bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/white"
+        android:text="KnoCo"
+        android:textSize="40dp" />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Email"
+        android:drawablePadding="20dp"
+        android:textColor="@color/white"
+        android:paddingLeft="20dp"
+        android:drawableLeft="@drawable/ic_baseline_email_20"
+        android:textColorHint="#928888"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/Logo"
+        android:background="@drawable/round_edit"
+        android:fontFamily="@font/abhaya_libre_bold"
+        android:singleLine="true"
+        android:layout_marginHorizontal="10dp"
+        />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:textColor="@color/white"
+        android:drawablePadding="20dp"
+        android:paddingLeft="20dp"
+        android:drawableLeft="@drawable/ic_baseline_key_24"
+        android:textColorHint="#928888"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/userName"
+        android:background="@drawable/round_edit"
+        android:layout_marginHorizontal="10dp"
+        android:fontFamily="@font/abhaya_libre_bold"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        />
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Sign in"
+        android:layout_marginHorizontal="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pass"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_circle"
+        android:textColor="#625F5F"
+
+        android:textSize="20dp"
+        android:fontFamily="@font/abhaya_libre_bold"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget password"
+        android:textColor="#FF5533"
+        android:textSize="20dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/loginbtn"
+        android:fontFamily="@font/abhaya_libre_bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:textColor="#625F5F"
+        android:textSize="20dp"
+        android:layout_toEndOf="@+id/forget"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/loginbtn"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/abhaya_libre_bold"
+        android:textColorLink="@color/black"
+        android:id="@+id/signin"
+        android:clickable="true"
+        />
+
+    <TextView
+        android:id="@+id/wrong"
+        android:layout_below="@id/pass"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="110dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="Wrong email and password"
+        android:textColor="#FF5533"
+        />
+
+
+</RelativeLayout>

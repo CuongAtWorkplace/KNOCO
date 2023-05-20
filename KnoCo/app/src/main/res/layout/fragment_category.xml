@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.CategoryFragment">
+
+
+    <!-- TODO: Update blank fragment layout -->
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cateback"
+
+    >
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+
+    <SearchView
+        android:layout_marginTop="10dp"
+        android:id="@+id/SearchCate"
+        android:backgroundTint="@color/silver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_background"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search something ..."
+
+        />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/SearchCate"
+        android:layout_width="match_parent"
+        android:id="@+id/Title"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:text="EXPLORE BY GENRE"
+        android:textColor="@color/silver"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="24dp"
+        android:id="@+id/Catetxt"
+        />
+
+        <TextView
+            android:layout_margin="20dp"
+            android:textColor="@color/silver"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="See new releases , most read books , quotes , lists and more in these popular genres"
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rcvCate"
+        android:layout_below="@+id/Title"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rcvGernes"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rcvCate"
+        />
+</RelativeLayout>
+</androidx.core.widget.NestedScrollView>
+</FrameLayout>
