@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".fragment.MessageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below=""
+        android:layout_above="@id/sendLayout"
+        />
+
+    <RelativeLayout
+        android:id="@+id/sendLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="650dp"
+        android:background="@drawable/round_edit"
+        android:layout_marginBottom="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_margin="10dp"
+            android:textSize="10sp"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@id/Sendbtn"
+            android:hint="Type Something"
+            android:textColor="@color/white" />
+
+        <ImageButton
+            android:id="@+id/Sendbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_action_send"
+            android:layout_marginRight="10dp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
